@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html style="scroll-behavior:smooth;">
+<title>Adwaith Athman</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<link rel="icon" href="./images/logo.png" type="image/gif" sizes="40x40">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+
+<!--highlights css file-->
+<link rel="stylesheet" href="./css/highlights.css">
+
+<!--  aos data for scrolling effect -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!--image overlay hower effect css file-->
+<link rel="stylesheet" href="./css/howereffect.css">
+
+<style>
+
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+  }
+  
+  /* Create a Parallax Effect */
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url('./images/cover\ photo.jpg');
+    min-height: 100%;
+  }
+  
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("./images/education.jpg");
+    min-height: 400px;
+  }
+  
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("./images/contact.jpg");
+    min-height: 400px;
+  }
+  
+  /* Forth image (portfolio) */
+  .bgimg-4 {
+    background-image: url("./images/portfolio.jpg");
+    min-height: 400px;
+  }
+
+/*body,h1,h2,h3,h4,h5,h6 {font-family: "Catamaran", sans-serif;}*/
+
+.w3-wide {letter-spacing: 10px;}
+  .w3-hover-opacity {cursor: pointer;}
+  
+  .w3-padding-large {
+      padding: 20px 30px!important;
+  }
+  
+  .w3-xlarge {
+      font-size: 30px!important;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones 
+  @media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+  }*/
+  
+  #logo {
+    font-family: 'Righteous', cursive;
+  }
+  
+  @media only screen and (max-width: 500px){
+    .w3-wide {letter-spacing: 5px;}
+  .w3-hover-opacity {cursor: pointer;}
+  
+  .w3-padding-large {
+      padding: 15px 10px!important;
+  }
+  
+  .w3-xlarge {
+      font-size: 24px!important;
+  }
+  
+  html, body {
+      /*font-family: "Lato",sans-serif;*/
+      font-size: 16.8px;
+      line-height: 1.5;
+  }
+  
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 12px;
+    background: transparent;
+    
+  }
+  ::-webkit-scrollbar-thumb{
+    background:  #777;
+    border-radius: 12px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: rgb(51, 51, 51);
+  }
+  ::-webkit-scrollbar-track{
+    border: 2px solid #696f8a18;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.514);
+  }
+  ::-webkit-scrollbar-corner{
+    border-radius: 12px;
+  }
+  
+  .w3-dark-grey{
+    background-color: #3f3f3f!important;
+  }
+  
+  .skillbar{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .w3-xxlarge {
+      font-size: 40px!important;
+  }
+  
+  .particles-js-canvas-el {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+  }
+  
+  .w3-top {
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+  }
+  
+  .w3-display-middle {
+      z-index: 1;
+  }
+  
+  .eduimg {
+   /* box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);*/
+      border-radius: 20px;
+      padding: 10px 10px ;
+      }
+  
+body{
+  background-color: #eeeeee;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23eeeeee'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23f7f7f7'/%3E%3Cstop offset='1' stop-color='%23eeeeee'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='translate(1060 0)'%3E%3Cg transform='translate(0 690)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(-158.4 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.21' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+
+}
+
+.skillsetbar{
+  background-color: #cccccce0!important;
+}
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<nav>
+<div class="w3-top" style="color:white">
+  <div class="w3-bar" id="myNavbar" style="font-size: 24px;">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"  href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#particles-js" class="w3-bar-item w3-button w3-hover-red" ><span id="logo"><img src="./images/logo.png" width="40" height="40">  ADWAITH.</span></a>
+    
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right" style="font-family: 'Lovers Quarrel', cursive; font-size: 35px; padding: 0px 16px; font-weight: 500;"> Contact</a>
+    <a href="#education" class="w3-bar-item w3-button w3-hide-small w3-right" style="font-family: 'Lovers Quarrel', cursive; font-size: 35px; padding: 0px 16px; font-weight: 500;"> Education</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right" style="font-family: 'Lovers Quarrel', cursive; font-size: 35px; padding: 0px 16px; font-weight: 500;"> Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-right" style="font-family: 'Lovers Quarrel', cursive; font-size: 35px; padding: 0px 16px;font-weight: 500;"> About</a>
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium " style="font-size: 18px;">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
+    <a href="#education" class="w3-bar-item w3-button" onclick="toggleFunction()"> EDUCATION</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
+    
+  </div>
+</div>
+</nav>
+
+<!-- First Parallax Image with Logo Text -->
+<!--<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+  </div>
+</div>-->
+
+<div class="bgimg-1 w3-display-container "  id="particles-js" >
+    <div class="w3-display-middle" style="white-space:nowrap;">
+  <h1 style="font-weight: bold;"> 
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity typewrite"  data-period="2000" data-type= '[ "HI, I AM ADWAITH", "I AM A DEVELOPER", "I LOVE TO DESIGN" ]'>
+      <!--<span class="w3-hide-small">HI</span> I'M ADWAITH --></span>
+  </h1>
+    </div>
+  </div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <h3  class="w3-center" data-aos="fade-right" style="font-family: 'Lovers Quarrel', cursive; font-size: 64px;">About Me</h3>
+    <p class="w3-center" data-aos="fade-down"><em>"I am Unique, I am Special,<br> I am Me."</em></p>
+
+      <div class="w3-col m6 w3-center w3-padding-large" data-aos="zoom-in"  data-aos-delay="500">
+       <br> <img src="./images/adwaith.jpg" class="w3-round w3-image w3-opacity-min w3-hover-opacity-off" alt="Photo of Me" width="280" height="170">
+        <p><b><i class="fa fa-user w3-margin-right"></i>Adwaith Athman</b></p>
+      </div>
+  
+      <div class="w3-col m6  w3-padding-large" data-aos="fade-down">
+        <p> I am a third year student pursuing a bachelor's degree in Electronics and Communication Engineering from
+          Mar Athanasius College of Engineering, Kerala. I am a cinephile and a sports ethusiast. I love playing chess and have participated in various tournaments at various levels. 
+         Coming to the geek side, I love web designing and programming. I  also enjoy content writing, graphic designing and also familiar with popular tools associated with it.
+         I constantly follow the latest technological trends and keep a note of them. I am a solution-centric and detail-oriented person driven by ideas and innovations.
+         I always dream to be a part of a global leader in technology and contribute to the core
+         creative sector, leveraging my skills and competencies.</p>
+      </div>
+    </div>
+  
+
+   <!-- forth Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="portfolio">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide" ><P style="font-weight: bolder;" data-aos="fade-down">PORTFOLIO</p></span>
+    </div>
+  </div>
+
+  <div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center" data-aos="fade-right" style="font-family: 'Lovers Quarrel', cursive; font-size: 64px;">My Skills</h3>
+  <p class="w3-center" data-aos="fade-down"><em>"Skill is the unified force of experience, intellect and<br> passion in their operation" <br> -John Ruskin</em></p>
+  <p class="w3-wide skillbar" data-aos="fade-right"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey skillsetbar">
+    <div class="w3-container  w3-dark-grey w3-center" style="width:80%" data-aos="fade-right" data-aos-delay="100">80%</div>
+  </div>
+  <p class="w3-wide skillbar" data-aos="fade-right" data-aos-delay="200"><i class="fa fa-code"></i>C/C++</p>
+  <div class="w3-light-grey skillsetbar">
+    <div class="w3-container  w3-dark-grey w3-center" style="width:75%" data-aos="fade-right" data-aos-delay="300">75%</div>
+  </div>
+  <p class="w3-wide skillbar" data-aos="fade-right" data-aos-delay="400"><i class="fa fa-windows"></i>MS Office</p>
+  <div class="w3-light-grey skillsetbar">
+    <div class="w3-container w3-dark-grey w3-center" style="width:70%" data-aos="fade-right" data-aos-delay="500">70%</div>
+  </div>
+  <p class="w3-wide skillbar" data-aos="fade-right" data-aos-delay="600"><i class="fa fa-code"></i>Python</p>
+  <div class="w3-light-grey skillsetbar">
+    <div class="w3-container w3-dark-grey w3-center" style="width:60%" data-aos="fade-right" data-aos-delay="700">60%</div>
+  </div>
+</div>
+
+<!--  resume , achievement section    -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-15">
+    <div class="w3-quarter w3-section " data-aos="fade-down">
+      <span class="w3-large"><a href="https://drive.google.com/file/d/1eMYG8BtplK2bTIpTfX1AdqumwnDHcE7_/view?usp=sharing"><button class="w3-button w3-padding-small "><i class="fa fa-address-card fa-lg" aria-hidden="true"></i></span><br>
+    <h3 style="font-family:'Lovers Quarrel', cursive; font-size: 40px;">Resume</h3></button></a>
+    </div>
+    <div class="w3-quarter w3-section" data-aos="fade-down" >
+      <span class="w3-large"><button type="button" class="w3-button w3-padding-small " data-toggle="modal" data-target="#exampleModal"><i class="fa fa-thumb-tack fa-lg" aria-hidden="true"></i></span><br>
+        <h3 style="font-family:'Lovers Quarrel', cursive; font-size: 40px;">Highlights</h3></button>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" style="color:#777;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black; font-family:'Lovers Quarrel', cursive; font-size: 45px;">Highlights</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body border m-2 hb" style="border: 4px solid #969696!important; border-radius: 6px; text-align: left;">
+        
+        <div class="timeline" >
+          <div class="container left">
+            <div class="content">
+              <h2 ><b>DSC MACE</b></h2>
+              <h3 style="color: #FF9F55;">PUBLICITY LEAD</h3>
+              <p >Developer Student Clubs are university based community groups for students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2><b>INSIDE MACE</b></h2>
+              <h3 style="color: #FF9F55;">SPEAKER COMMUNICATION COORDINATOR</h3>
+              <p>INSIDE MACE is a non-profit organization with the intent to engage students with professionals and help them to kickstart their professional dreams. In InsideMACE, we are trying to disseminate a community of students and professionals, providing students exposure to the industry through webinars, internships, and career opportunities.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2><b>CODECHEF MACE</b></h2>
+              <h3 style="color: #FF9F55;">DOCUMENTATION TEAM MEMBER</h3>
+              <p>CodeChef College Chapters are the programming clubs run and maintained by the official chapter leaders and mentored by CodeChef. They aim to make learning competitive programming accessible for students across the globe.The mission of CodeChef College Chapters is to empower Chapter Leaders to build a robust Competitive Programming culture on campuses and to help students become better problem solvers fostering learning and professional development.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2><b>IEEE</b></h2>
+              <h3 style="color: #FF9F55;">VOLUNTEER</h3>
+              <p>Webteam Content Manager, <br>
+                Part of IEEE MACE SB Newsletter Team, <br>
+                Volunteered as Campus Ambassador for IEEE CSIS'20 (Computer Society India Symposium),<br> 
+                Served as Student Branch Associate at AISYWLC, <br>
+                Volunteered as  Student Ambassador for SNAG THE INSIGNIA, <br>
+                Served as Publicity volunteer for SPAAM, <br>
+                Volunteered as Campus Ambassador for IFSFS.</p>
+                <div class="form-group text-center " ></div>
+                            <a href="https://drive.google.com/drive/folders/1ChKQF5i--RiV5O9ocjFX2XcvfBhyIEs3?usp=sharing" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px">CERTIFICATES</button></a>
+                            </div>
+            </div>
+          </div>
+
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="w3-quarter w3-section" data-aos="fade-down">
+      <span class="w3-large"><button class="w3-button w3-padding-small " data-toggle="modal" data-target="#myModal"><i class="fa fa-certificate fa-lg" aria-hidden="true"></i></span><br>
+        <h3 style="font-family:'Lovers Quarrel', cursive; font-size: 40px;">Certifications</h3></button>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" style="color:#777;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel" style="color: black; font-family:'Lovers Quarrel', cursive; font-size: 45px;">Certifications</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body border m-2 hb" style="border: 4px solid #969696!important; border-radius: 6px; text-align: left;">
+
+        <div class="timeline" >
+          <div class="container left">
+            <div class="content" >
+              <h2><b>IBM</b></h2>
+              <h3 style="color: #FF9F55;">FOUNDATIONS OF AI</h3>
+              <p>This Professional Certificate program consists of 3 courses:<br>
+                1) AI for Everyone: Master the Basics<br>
+                2) Introduction to Watson AI<br>
+                3) AI Chatbots without programming</p>
+                <div class="form-group text-center "></div>
+                <a href="https://credentials.edx.org/credentials/b4cf8b59713b40338431c3af123fb8bd/" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2><b>RITx</b></h2>
+              <h3 style="color: #FF9F55;">LEADERSHIP ESSENTIALS</h3>
+              <p>This Professional Certificate program consists of 3 courses:<br>
+                1) Critical Thinking & Problem-Solving<br>
+                2) Business Communication<br>
+                3) Teamwork & Collaboration</p>
+                <div class="form-group text-center "></div>
+                <a href="https://credentials.edx.org/credentials/5d541b2ef8ad466292d7806e92ebed77/" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2><b>RITx</b></h2>
+              <h3 style="color: #FF9F55;">COMMUNICATION SKILLS</h3>
+              <p>This Professional Certificate program consists of 3 courses:<br>
+                1) Storytelling in the Workplace<br>
+                2) Public Speaking<br>
+                3) Visual Presentation</p>
+                <div class="form-group text-center "></div>
+                <a href="https://credentials.edx.org/credentials/a1ccb965907b43d9bde23aaf77e10463/" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2 ><b>RICE UNIVERSITY</b></h2>
+              <h3 style="color: #FF9F55;">LEADERSHIP DEVELOPMENT FOR ENGINEERS</h3>
+              <p >This Specialization is designed for professional engineers who are interested in advancing into leadership and management roles. You’ll develop awareness of your own strengths and weaknesses as a leader, and you’ll learn to leverage your strengths and control for your weaknesses when you’re placed in charge of a team or project. You’ll also learn to manage relationships with your team members and colleagues through proven coaching, mentoring, and conflict resolution techniques.</p>
+                <div class="form-group text-center " ></div>
+                            <a href="https://coursera.org/share/11befa2f171dcaf418bbad5797cc5971" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+                            </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2><b>RICE UNIVERSITY</b></h2>
+                <h3 style="color: #FF9F55;">INTRODUCTION TO DATA ANALYSIS USING EXCEL</h3>
+                <p>The use of Excel is widespread in the industry. It is a very powerful data analysis tool and almost all big and small businesses use Excel in their day to day functioning. This is an introductory course in the use of Excel and is designed to give you a working knowledge of Excel with the aim of getting to use it for more advance topics in Business Statistics later.</p>
+                  <div class="form-group text-center " ></div>
+                              <a href="https://www.coursera.org/account/accomplishments/certificate/93FAK7KR7423" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+                              </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <h2><b>UNIVERSITY OF MINESOTA</b></h2>
+                  <h3 style="color: #FF9F55;">CREATIVE PROBLEM SOLVING</h3>
+                  <p >This course deals directly with your ability for creativity which is a critical skill in any field. It focuses on divergent thinking, the ability to develop multiple ideas and concepts to solve problems. Through a series of creativity building exercises, short lectures, and readings, learners develop both an understanding of creativity and increase their own ability.This course will help you understand the role of creativity and innovation in your own work and in other disciplines.</p>
+                    <div class="form-group text-center "></div>
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/Z4EWP3R2TG2J" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+                                </div>
+                </div>
+                <div class="container left">
+                  <div class="content">
+                    <h2 ><b>UNIVERSITY OF MICHIGAN</b></h2>
+                    <h3 style="color: #FF9F55;">THE SCIENCE OF SUCCESS: WHAT REASEARCHERS KNOW THAT YOU SHOULD KNOW</h3>
+                    <p >This engaging course is designed to help you achieve the success that you desire. Drawing on decades of scientific research, you will learn what the most successful people do differently than others, why IQ is not the most significant predictor of success (and can sometimes backfire), and why many commonly held beliefs hold people back from achieving their goals.</p>
+                      <div class="form-group text-center " ></div>
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/5JD8LT6ZFHRW" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+                                  </div>
+                  </div>
+                  <div class="container right">
+                    <div class="content">
+                      <h2><b>UNIVERSITY OF MICHIGAN</b></h2>
+                      <h3 style="color: #FF9F55;">INTRODUCTION TO HTML5</h3>
+                      <p>This course will appeal to a wide variety of people, but specifically those who would like a step-by-step description of the basics. There are no prerequisites for this course and it is assumed that students have no prior programming skills or IT experience. The course will culminate in a small final project that will require the completion of a very simple page with links and images.</p>
+                        <div class="form-group text-center "></div>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/2XJLZ63AGMMP" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+                                    </div>
+                    </div>
+                    <div class="container left">
+                      <div class="content">
+                        <h2><b>COURSERA</b></h2>
+                        <h3 style="color: #FF9F55;">OBJECT-ORIENTED PROGRAMMING WITH JAVA</h3>
+                        <p>In this project you will create a fun social media profile app for pets while learning the principles of object-oriented programming.By the end of the project, you will understand the 4 principles of object-oriented programming, write object-oriented code in Java, and be able to apply the same concepts to other object-oriented programming languages!</p>
+                          <div class="form-group text-center " ></div>
+                                      <a href="https://www.coursera.org/account/accomplishments/certificate/P8UHK3PPC2SV" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+                                      </div>
+                      </div>
+                      <div class="container right">
+                        <div class="content">
+                          <h2><b>COURSERA</b></h2>
+                          <h3 style="color: #FF9F55;">INTRODUCTION TO PROJECT MANAGEMENT</h3>
+                          <p>This course is designed to give you the fundamentals of Project Management. You will learn the basic principles of Project Management by managing a fundraising event for your local farmers market. You will designate responsible team members to help you, build a timeline and see the different ways that you can manage the project.</p>
+                            <div class="form-group text-center "></div>
+                                        <a href="https://www.coursera.org/account/accomplishments/certificate/GH5VM74ZEM2A" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+                                        </div>
+                        </div>
+                        <div class="container left">
+                    <div class="content">
+                      <h2><b>GUVI GEEK NETWORK</b></h2>
+                      <h3 style="color: #FF9F55;">BUILD A FACE RECOGNITION APPLICATION USING PYTHON</h3>
+                      <p>It was conducted as a part of the AI-For-India Event. AI-For-India Event is a technological initiative by GUVI & AICTE to make India as One of the top countries in Artificial Intelligence. In this program we will learn basics of python, image processing and finally, to build a face recognition app.</p>
+                        <div class="form-group text-center "></div>
+                                    <a href="https://www.guvi.in/verify-certificate?id=Z203SA39426s115m4d#" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+                                    </div>
+                    </div>
+
+                    <div class="container right">
+                      <div class="content">
+                        <h2><b>GOOGLE CLOUD</b></h2>
+                        <h3 style="color: #FF9F55;">30 DAYS OF GOOGLE CLOUD PROGRAM</h3>
+                        <p>Google Cloud in collaboration with Developer Students Club (DSC) provides an opportunity to students to start their journey in cloud programming with hands-on labs on Google Cloud Platform that powers apps like Google Search, Gmail, and YouTube. Along the way, you will learn and practice cloud concepts like computing, big data, application developments, and machine learning. The program is divided into two tracks; Cloud Engineering Track and Data Science & Machine Learning Track.</p>
+                          <div class="form-group text-center "></div>
+                                      <a href="https://drive.google.com/file/d/17aRzkuY5oFU4TFaQDuy63BQ1ui7fUnRK/view?usp=sharing" > <button type="submit" class=" btn  w3-light-grey text-center w3-hover-grey" style=" margin-top:15px; padding: 8px 22px; border-width: 0px"> VIEW</button></a>
+                                      </div>
+                      </div>
+
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="w3-quarter w3-section" data-aos="fade-down">
+      <span class="w3-large"><button class="w3-button w3-padding-small" data-toggle="modal" data-target="#thirdModal"><i class="fa fa-tasks fa-lg" aria-hidden="true"></i></span><br>
+        <h3 style="font-family:'Lovers Quarrel', cursive; font-size: 40px;">Projects</h3></button>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="thirdModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" style="color:#777;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="thirdModalLabel" style="color: black; font-family:'Lovers Quarrel', cursive; font-size: 45px;">Projects</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body border m-2 hb" style="border: 4px solid #969696!important; border-radius: 6px; text-align: left;">
+
+Soon to be updated.....
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div> 
+
+<!-- Second Parallax Image with education Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="education">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"><p style="font-weight: bolder;" data-aos="fade-down">EDUCATION</p></span>
+  </div>
+</div>
+
+<!-- Container (Education Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center" data-aos="fade-right" style="font-family: 'Lovers Quarrel', cursive; font-size: 64px;">My Alma Mater</h3>
+    <p class="w3-center" data-aos="fade-down"><em>" An investment in knowledge pays the best dividends."<br>     -Benjamin Franklin</em></p><br>
+
+    <div class="w3-row-padding w3-center">
+    
+      <div class="w3-col m4" data-aos="zoom-in">
+        <div class="hovereffect">
+       <img src="./images/Lemer.jpg" style="width:100%" class="img-responsive eduimg" alt="">
+       <div class="overlay">
+        <h2>Lemer Public School Thriprayar</h2>
+        <a class="info" href="http://lemerschool.in/">WEBSITE</a>
+     </div>
+    </div>
+      </div>
+  
+      <div class="w3-col m4" data-aos="zoom-in"  data-aos-delay="200">
+        <div class="hovereffect">
+       <img src="./images/chss.jpg" style="width:100%"  class="img-responsive eduimg" alt="">
+       <div class="overlay">
+        <h2>Chentrappinni Higher Secondary School</h2>
+        <a class="info" href="https://www.facebook.com/Chentrappinni-higher-secondary-school-248553325268458">WEBSITE</a>
+     </div>
+    </div>
+      </div>
+  
+      <div class="w3-col m4" data-aos="zoom-in"  data-aos-delay="300">
+        <div class="hovereffect">
+      <img src="./images/mace.jpg" style="width:100%" class="img-responsive eduimg" alt="">
+      <div class="overlay">
+        <h2>Mar Athanasius College of Engineering</h2>
+        <a class="info" href="http://www.mace.ac.in/">WEBSITE</a>
+     </div>
+    </div>
+      </div>
+
+      <div class="form-group text-center" data-aos="fade-down" data-aos-delay="500">
+        <button type="submit" class="w3-button  w3-light-grey text-center skillsetbar" data-toggle="modal" data-target="#forthModal" style="width:40%; margin-top:64px">  MORE INFO  </button>
+        </div>
+    
+<!-- Modal -->
+<div class="modal fade" id="forthModal" tabindex="-1" aria-labelledby="forthModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" style="color:#777;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="forthModalLabel" style="color: black; font-family:'Lovers Quarrel', cursive; font-size: 45px;">Education</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body border m-2 hb" style="border: 4px solid #969696!important; border-radius: 6px; text-align: left;">
+        
+        <div class="timeline" >
+          <div class="container left">
+            <div class="content">
+              <h2 ><b>2018- 2022</b></h2>
+              <h3 style="color: #FF9F55;">MAR ATHANASIUS COLLEGE OF ENGINEERING</h3>
+              <p > B-Tech | Electronics and Communication Engineering <br></p><p style="font-weight: bold;">  CGPA : </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2><b>2016-2018</b></h2>
+              <h3 style="color: #FF9F55;">CHENTRAPPINNI HIGHER SECONDARY SCHOOL</h3>
+              <p> Higher Secondary Education | Computer Science Stream <br></p><p style="font-weight: bold;">  PERCENTAGE: 90.3%</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2><b>2006-2016</b></h2>
+              <h3 style="color: #FF9F55;">LEMER PUBLIC SCHOOL</h3>
+              <p> High School Education<br></p><p style="font-weight: bold;">  CGPA: 9.8</p>
+            </div>
+          </div>
+          </div>
+
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with contact Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"><p style="font-weight: bolder;" data-aos="fade-down">CONTACT</p></span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" >
+  <h3 class="w3-center" data-aos="fade-right" style="font-family: 'Lovers Quarrel', cursive; font-size: 64px;">Connect Me</h3>
+  <p class="w3-center" data-aos="fade-down"><em>"I'd love your feedback!"</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container" data-aos="zoom-in"  data-aos-delay="500">
+      <img src="./images/travel.gif" class="w3-image w3-round w3-opacity-min" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom" data-aos="fade-down"  >
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" data-aos="zoom-in"  data-aos-delay="500"></i> Thrissur, Kerala<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" data-aos="zoom-in"  data-aos-delay="600"></i> Phone: +91 9633097398<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" data-aos="zoom-in"  data-aos-delay="700"></i> adwaith_athman@ieee.org<br>
+      </div>
+      <p data-aos="fade-down" data-aos-delay="1000">Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="https://kwes.io/api/foreign/forms/TYORQIstpdRfVJcYVwoC" class="kwes-form" data-aos="zoom-in" data-aos-delay="1100">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" rules="required|max:255">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border kw-border-error" type="text" placeholder="Email" required name="Email" rules="email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" rules="required">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity-min w3-hover-opacity-off">
+    <a href="#particles-js" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section" style="word-spacing:3px;">
+      <a href="https://www.facebook.com/adwaith.athman/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/adwaith_athman_17/"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/Adwaith_17"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/adwaith-athman-5a1646193/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+    <p style="word-spacing:3px;"> ©2021 Adwaith Athman </p> </footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+//typewriting effect 
+var TxtType = function(el, toRotate, period) {
+          this.toRotate = toRotate;
+          this.el = el;
+          this.loopNum = 0;
+          this.period = parseInt(period, 10) || 2000;
+          this.txt = '';
+          this.tick();
+          this.isDeleting = false;
+      };
+  
+      TxtType.prototype.tick = function() {
+          var i = this.loopNum % this.toRotate.length;
+          var fullTxt = this.toRotate[i];
+  
+          if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+          } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+          }
+  
+          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  
+          var that = this;
+          var delta = 200 - Math.random() * 100;
+  
+          if (this.isDeleting) { delta /= 2; }
+  
+          if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+          } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+          }
+  
+          setTimeout(function() {
+          that.tick();
+          }, delta);
+      };
+  
+      window.onload = function() {
+          var elements = document.getElementsByClassName('typewrite');
+          for (var i=0; i<elements.length; i++) {
+              var toRotate = elements[i].getAttribute('data-type');
+              var period = elements[i].getAttribute('data-period');
+              if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+              }
+          }
+          // INJECT CSS
+          var css = document.createElement("style");
+          css.type = "text/css";
+          css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+          document.body.appendChild(css);
+      };
+</script>
+
+<!--  AOS data for scrolling effect -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 240, // offset (in px) from the original trigger point
+     // delay: 0,  values from 0 to 3000, with step 50ms
+      duration: 1300, // values from 0 to 3000, with step 50ms
+    });
+  </script>
+<script src="./other/main.js"></script>
+
+<!--kwes form-->
+<script src="https://kwes.io/v2/kwes-script.js" defer></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<!--particles js file-->
+<script type="text/javascript" src="./js/particles.min.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+
+</body>
+</html>
