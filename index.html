@@ -190,6 +190,60 @@ background-size: cover;
 .skillsetbar{
   background-color: #cccccce0!important;
 }
+    
+ /*navbar*/
+.overlay2 {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay2-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.overlay2 a:hover, .overlay2 a:focus {
+  color: #f1f1f1;
+}
+
+.overlay2 .closebtn {
+  position: absolute;
+  top: 2px;
+  right: 30px;
+  font-size: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay2 {overflow-y: auto;}
+  .overlay2 a {font-size: 20px}
+  .overlay2 .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}   
 
 </style>
 
@@ -212,13 +266,24 @@ background-size: cover;
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium " style="font-size: 18px;">
+ <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium " style="font-size: 18px;">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
     <a href="#education" class="w3-bar-item w3-button" onclick="toggleFunction()"> EDUCATION</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
     
+  </div>-->
+    
+    <div id="myNav" class="overlay2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay2-content">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"> PORTFOLIO</a>
+    <a href="#education" class="w3-bar-item w3-button" onclick="toggleFunction()"> EDUCATION</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
+    </div>
   </div>
+    
 </div>
 </nav>
 
@@ -800,6 +865,17 @@ var TxtType = function(el, toRotate, period) {
 <!--particles js file-->
 <script type="text/javascript" src="./js/particles.min.js"></script>
 <script type="text/javascript" src="./js/app.js"></script>
-
+    
+<!--navbar-->
+ <script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "45%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+  </script>   
+    
 </body>
 </html>
