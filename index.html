@@ -248,6 +248,9 @@ background-size: cover;
 </style>
 
 <body>
+ 
+<!-- preloader-->
+<div id="loader" class="center"></div>
 
 <!-- Navbar (sit on top) -->
 <nav>
@@ -875,7 +878,24 @@ var TxtType = function(el, toRotate, period) {
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
-  </script>   
+  </script>  
+    
+ <!--preloader-->
+ <script>
+  document.onreadystatechange = function() {
+      if (document.readyState !== "complete") {
+          document.querySelector(
+            "body").style.visibility = "hidden";
+          document.querySelector(
+            "#loader").style.visibility = "visible";
+      } else {
+          document.querySelector(
+            "#loader").style.display = "none";
+          document.querySelector(
+            "body").style.visibility = "visible";
+      }
+  };
+</script>
     
 </body>
 </html>
