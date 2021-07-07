@@ -1,0 +1,78 @@
+@media only screen and (max-width: 600px){
+
+  .padding-grid{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+.final-gif{
+  height:220px;
+}
+
+.about-pic{
+  padding-left: 50px ;
+  padding-right: 50px;
+}
+
+.margin-blog-box{
+  margin-top: 16px;
+  margin-bottom: 50px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.featured-post{
+  border-radius: 8px;
+  width: 75px;
+}
+
+}
+
+@media only screen and (min-width: 600px){
+
+  .padding-grid{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .blog-pic{ 
+    height: 400px; 
+    padding: 3px;
+  }
+
+  .about-pic{
+    padding-left: 80px ;
+    padding-right: 80px;
+  }
+
+  .mobile-break{
+    display: none;
+  }
+
+  .margin-blog-box{
+    margin-top: 16px;
+    margin-bottom: 55px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .padding-blog-enteries{
+    padding-right: 35px ;
+  }
+
+  .featured-post{
+    border-radius: 8px;
+    width: 85px;
+  }
+
+}
+
+/*common*/
+
+.blog-entry-br{
+  border-radius: 20px;
+  padding: 10px;
+}
+
+
+
