@@ -25,6 +25,14 @@
   border-radius: 8px;
   width: 75px;
 }
+  
+.fp-font-size{
+  font-size: 17.3px;
+}
+
+.fp-font-size-small{
+  font-size:16.9px ;
+}  
 
 }
 
@@ -63,6 +71,14 @@
   .featured-post{
     border-radius: 8px;
     width: 85px;
+  }
+  
+  .fp-font-size{
+    font-size: 18px;
+  }
+
+  .fp-font-size-small{
+    font-size:16.8px ;
   }
 
 }
