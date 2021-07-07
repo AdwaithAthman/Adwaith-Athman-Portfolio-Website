@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en" style="scroll-behavior:smooth;">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="icon" href="./images/logo.png" type="image/gif" sizes="40x40">
+
+    <title>Adwaith Athman</title>
+
+    <!-- preloader css file -->
+    <link rel="stylesheet" href="./css/preloader.css">
+
+    <!--  template css file -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<style>
+
+  body, html {
+  height: 100%;
+  font-family:  sans-serif;
+  line-height: 1.8;
+}
+
+ .bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./images/main-pic-blog1.jpg");
+  min-height: 60%;
+}
+
+ .menu {
+  display: none;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+    background: transparent;
+    
+  }
+  ::-webkit-scrollbar-thumb{
+    background:  #777;
+    border-radius: 12px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: rgb(51, 51, 51);
+  }
+  ::-webkit-scrollbar-track{
+    border: 2px solid #696f8a18;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.514);
+  }
+  ::-webkit-scrollbar-corner{
+    border-radius: 12px;
+  }
+
+  .quote-padding{
+    padding: 12px 16px;
+  }
+
+  /*navbar*/
+.overlay2 {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.87);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay2-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.overlay2 a:hover, .overlay2 a:focus {
+  color: #f1f1f1;
+}
+
+.overlay2 .closebtn {
+  position: absolute;
+  top: 2px;
+  right: 30px;
+  font-size: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay2 {overflow-y: auto;}
+  .overlay2 a {font-size: 20px}
+  .overlay2 .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+button.w3-button.w3-padding-small {
+    border-radius: 15px;
+    width: 140px;
+}
+
+#logo {
+    font-family: 'Righteous', cursive;
+  }
+  
+  body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+
+  @media screen and (max-width: 500px){
+    .footer-effects{
+  font-size: 16.8px;
+    line-height: 1.5;
+    }
+
+    .w3-xlarge {
+    font-size: 24px!important;
+}
+
+.floating-btn{
+  width: 58px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.87);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 23px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  bottom: 20px;
+  left: 15px;
+  transition: background 0.25s;
+
+}
+
+.padding-mob-content{
+  padding-left: 6px;
+    padding-right: 6px;
+}
+
+.heading-size{
+  font-size: 21px;
+}
+
+.date-size{
+  font-size: 13px;
+}
+
+.blog1-title{
+  font-size: 35px;
+  font-weight: bolder;
+  text-shadow: 5px 3px 5px #000000;
+}
+
+  }
+
+  @media screen and (min-width: 500px){
+    .footer-effects{
+  font-size: 16.8px;
+    line-height: 1.8;
+    }
+
+    .w3-xlarge {
+    font-size: 30px!important;
+}
+
+.floating-btn{
+  width: 60px;
+  height: 43px;
+  background: rgba(0, 0, 0, 0.87);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  bottom: 20px;
+  left: 52px;
+  transition: background 0.25s;
+
+}
+
+.heading-size{
+  font-size: 30px;
+}
+
+.date-size{
+  font-size:15px
+}
+
+.blog1-title{
+  font-size: 60px;
+  font-weight: bolder;
+  text-shadow: 5px 3px 5px #000000;
+}
+
+  }
+
+  .w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000000e7!important;
+}
+
+
+
+a{
+  color: white;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+a:active{
+  color: whitesmoke;
+}
+
+.floating-btn:active{
+  background: black;
+
+}
+
+</style>
+
+  </head>
+  <body>
+
+    <div id="loader" class="center"></div>
+
+<!-- Navbar (sit on top) -->
+<nav id="top-1">
+  <div class="w3-top" style="color:white">
+    <div class="w3-bar" id="myNavbar" style="font-size: 24px;">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"  href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <span style="font-size:25px;cursor:pointer" onclick="openNav2()"><i class="fa fa-bars"></i></span>
+      </a>
+      <a href="#top-1" class="w3-bar-item w3-button w3-hover-red" ><span id="logo"><img src="./images/logo.png" width="40" height="40">  AA.Blogs</span></a>
+      
+      <a href="./index.html" class="w3-bar-item w3-button w3-hide-small w3-right" style="font-family: 'Lovers Quarrel', cursive; font-size: 35px; padding: 0px 16px;font-weight: 500;"> Home</a>
+      <a href="./blog.html" class="w3-bar-item w3-button w3-hide-small w3-right" style="font-family: 'Lovers Quarrel', cursive; font-size: 35px; padding: 0px 16px; font-weight: 500;"> Blog</a>
+      
+      
+    </div>
+  
+    <div id="myNav" class="overlay2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+      <div class="overlay2-content">
+      <a href="./blog.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> BLOG</a>
+      <a href="./index.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> HOME</a>
+      
+      </div>
+    </div>
+    
+  
+  </div>
+  </nav>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container " id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white blog1-title">JOURNEY TO THE GOAL</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">www.adwaithathman.me</span>
+  </div>
+</header>
+
+<!--  floating icon  -->
+<a href="./blog.html" class=" floating-btn"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="  w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content padding-mob-content" style="max-width:1000px">
+    <div class=" w3-center" style="padding-top: 64px;"><h5 style="padding-bottom: 15px;" data-aos="fade-down" data-aos-once="true"><span class=" w3-wide heading-size"><b>JOURNEY TO THE GOAL</b></span></h5>
+      <p style="font-size: 13px;">
+        <span class="w3-tag w3-teal w3-margin-bottom w3-round" data-aos-once="true" data-aos="zoom-in" data-aos-delay="100"><b>Motivation</b></span>
+        <span class="w3-tag w3-teal w3-margin-bottom w3-round" data-aos-once="true" data-aos="zoom-in" data-aos-delay="130"><b>Success</b></span>
+        <span class="w3-tag w3-teal w3-margin-bottom w3-round" data-aos-once="true" data-aos="zoom-in" data-aos-delay="160"><b>Failure</b></span>
+        <span class="w3-tag w3-teal w3-margin-bottom w3-round" data-aos-once="true" data-aos="zoom-in" data-aos-delay="190"><b>Pursuing Dream</b></span>
+    </p>
+    <p class="w3-dark-grey date-size w3-round" data-aos-once="true" data-aos="fade-down"><b>3 July 2021 | 3 min read</b></p>
+    <hr>
+    </div>
+    <br>
+    <p data-aos-once="true" data-aos="fade-down">It is always good to dream big and follow one’s passion. The results are meant to be followed organically, depending upon the  earnest efforts we put forth.  But even after putting in a lot of effort, if still, the desired results are not coming along our way, what shall we do?</p><br>
+    <p data-aos-once="true" data-aos="fade-down">It’s a question that haunts most of us. In a country of a billion population, things get more obfuscated. The competition is getting stiffer and harder than ever and one would find it very difficult to pursue his dream. The obstacles one has to tackle are becoming more challenging and most would find themselves stuck in similar sorts of horrendous situations, not knowing what to do. Usually many would end up losing all hope and start blaming themselves or the system. But is this the right way? Is there a remedy to the problem?
+    </p>
+    <div class="text-center" data-aos-once="true" data-aos="zoom-in">
+      <img src="./images/blog 1/success.svg" style="width:100%;max-width:400px;">
+      </div>
+     <br><p data-aos-once="true" data-aos="fade-down"><b>Failure</b> and <b>Success</b> are just part of every game, we could end up on any side . A mere failure does not mean the end of the line, it's just an indicator to show our efforts are not up to the mark. More sincere ,vigorous and determined approach is the need of the hour and would also help to turn the tide in our favour.</p>
+     <br><p data-aos-once="true" data-aos="fade-down"><b>Patience</b> is the other key attribute that could save us in those scenarios. Pressuring ourselves is not a solution, it could only ask for more troubles. How hard you pressure yourself would only add up the mental fatigue.  Getting worried about the past chapters in life which cannot be overturned is just a waste of valuable time. Most people are nervous and tense about how their past actions would affect their future . By doing so they are forgetting they have a life to live in the present. In the process, a big chunk of time would be wasted which could have been utilized to make a difference in the future.</p>
+     <br><div class="w3-panel w3-leftbar w3-light-grey quote-padding" data-aos-once="true" data-aos="zoom-in">
+      <p><i>“Time isn’t precious at all, because it is an illusion. What you perceive as precious is not time but the one point that is out of time: the Now. That is precious indeed. The more you are focused on time — past and future — the more you miss the Now, the most precious thing there is.”</i></p>
+      <p>-Eckhart Tolle</p>
+    </div>
+    <br><p data-aos-once="true" data-aos="fade-down">When you think of your <b>FUTURE GOAL</b>, sometimes you start feeling overwhelmed. Have you ever encountered similar situations? It's something that I have experienced in my life.</p>
+    <br><p data-aos-once="true" data-aos="fade-down">In the run for achieving this big goal, we often forget to celebrate the small victories, they are overlooked. But what’s hilarious is that we have all the time in the world to get worried about even the smallest slump in the process. Actually there is no harm in getting slightly worried, anyway we have to correct these mistakes then only we can progress. But what generally happens in most cases is that people would overthink the situation and make it more convoluted to overcome.</p> 
+    <div class="text-center" data-aos-once="true" data-aos="zoom-in">
+      <img src="./images/blog 1/goal.svg" style="width:100%;max-width:400px;">
+      </div>
+     <p data-aos-once="true" data-aos="fade-down">These big goals are not something meant to be achieved overnight, they require lots of patience, hard work and perseverance. Instead of worrying about this impending tedious journey, it would be great if one is able to break down these  big goals into <b>mini-goals</b>. It would help to take things, one at a time. On top of that, if we could allocate some time for celebrating these little accomplishments  in our journey, it would help in our mental well-being. Celebrating these small successes can amplify one’s mood and productivity, alleviate depression, and help us to know our real worth. In this way, we can be more goal-oriented and build a habit of being more effective. It also helps us to enjoy the process rather than getting carried away fearing the tough journey at hand to realize our ambition.</p>
+    <br><div class="w3-panel w3-leftbar w3-light-grey quote-padding" data-aos-once="true" data-aos="zoom-in">
+      <p><i>"Celebrate the journey. It's not all about the destination. Savour all of your successes, even the small ones."</i></p>
+      <p> -Dawn Gluskin</p>
+    </div><br>
+    
+  </div>
+</div>
+
+<!-- disqus -->
+<div id="disqus_thread" data-aos-once="true" data-aos="fade-down"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://adwaith-athman.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<br>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity-min w3-hover-opacity-off footer-effects">
+  <a href="#top-1" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section" style="word-spacing:3px;">
+    <a href="https://www.facebook.com/adwaith.athman/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://github.com/AdwaithAthman"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/adwaith_athman_17/"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Adwaith_17"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/adwaith-athman-5a1646193/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p style="word-spacing:3px;"> ©2021 Adwaith Athman </p> </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- preloader js -->
+<script>
+  document.onreadystatechange = function() {
+      if (document.readyState !== "complete") {
+          document.querySelector(
+            "body").style.visibility = "hidden";
+          document.querySelector(
+            "#loader").style.visibility = "visible";
+      } else {
+          document.querySelector(
+            "#loader").style.display = "none";
+          document.querySelector(
+            "body").style.visibility = "visible";
+      }
+  };
+</script>
+
+<!-- template js -->
+<script>
+  // Tabbed Menu
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+  }
+  document.getElementById("myLink").click();
+  </script>
+  
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+
+<script>
+  function openNav2() {
+    document.getElementById("myNav").style.height = "35%";
+  }
+  
+  function closeNav2() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+  </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 240, // offset (in px) from the original trigger point
+     // delay: 0,  values from 0 to 3000, with step 50ms
+      duration: 1300, // values from 0 to 3000, with step 50ms
+    });
+  </script>
+
+  </body>
+</html>
