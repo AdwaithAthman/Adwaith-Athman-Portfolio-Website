@@ -91,7 +91,7 @@
 }
 
 a{
-  color: inherit;
+  color: whitesmoke;
   text-decoration: none;
 }
 
@@ -101,7 +101,7 @@ a:hover {
 }
 
 a:active{
-  color: inherit;
+  color: whitesmoke;
 }
 
 
