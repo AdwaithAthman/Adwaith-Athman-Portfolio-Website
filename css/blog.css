@@ -6,7 +6,7 @@
   }
 
 .final-gif{
-  height:220px;
+  height:215px;
 }
 
 .about-pic{
@@ -79,6 +79,10 @@
 
   .fp-font-size-small{
     font-size:16.8px ;
+  }
+  
+  .final-gif{
+    height:250px;
   }
 
 }
